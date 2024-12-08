@@ -99,7 +99,7 @@
                 class="social-link"
                 href="https://instagram.com"
                 target="_blank"
-                rel="noopener noreferre"
+                rel="noopener noreferrer"
                 aria-label="link to instagram"
               >
                 <svg class="mob-icon" width="24" height="24">
@@ -112,7 +112,7 @@
                 class="social-link"
                 href="https://twitter.com"
                 target="_blank"
-                rel="noopener noreferre"
+                rel="noopener noreferrer"
                 aria-label="link to twitter"
               >
                 <svg class="mob-icon" width="24" height="24">
@@ -125,7 +125,7 @@
                 class="social-link"
                 href="https://facebook.com"
                 target="_blank"
-                rel="noopener noreferre"
+                rel="noopener noreferrer"
                 aria-label="link to facebook"
               >
                 <svg class="mob-icon" width="24" height="24">
@@ -138,7 +138,7 @@
                 class="social-link"
                 href="https://linkedin.com"
                 target="_blank"
-                rel="noopener noreferre"
+                rel="noopener noreferrer"
                 aria-label="link to linkedin"
               >
                 <svg class="mob-icon" width="24" height="24">
@@ -221,13 +221,14 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img class="team-img"
-              srcset="./images/Face/Mark.jpg 1x, "
-
+              <img
+                class="team-img"
+                srcset="./images/Face/Mark.jpg 1x, ./images/Face/Mark@2x.jpg 2x"
                 src="./images/Face/Mark.jpg"
                 width="264"
                 alt="Mark Guerrero"
               />
+
               <div class="name-position">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="paragraph">Product Designer</p>
@@ -267,9 +268,14 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img"
-              srcset="./images/Face/Tom.jpg 1x, " 
-              src="./images/Face/Tom.jpg" width="264" alt="Tom Ford" />
+              <img
+                class="team-img"
+                srcset="./images/Face/Tom.jpg 1x, /images/Face/Tom@2x.jpg 2x"
+                src="./images/Face/Tom.jpg"
+                width="264"
+                alt="Tom Ford"
+              />
+
               <div class="name-position">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="paragraph">Frontend Developer</p>
@@ -310,12 +316,17 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img"
-              srcset="./images/Face/Camila.jpg 1x,"
+              <img
+                class="team-img"
+                srcset="
+                  ./images/Face/Camila.jpg    1x,
+                  ./images/Face/Camila@2x.jpg 2x
+                "
                 src="./images/Face/Camila.jpg"
                 width="264"
                 alt="Camila Garcia"
               />
+
               <div class="name-position">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="paragraph">Marketing</p>
@@ -355,12 +366,17 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img"
-              srcset="./images/Face/Daniel.jpg 1x,"
+              <img
+                class="team-img"
+                srcset="
+                  ./images/Face/Daniel.jpg    1x,
+                  ./images/Face/Daniel@2x.jpg 2x
+                "
                 src="./images/Face/Daniel.jpg"
                 width="264"
                 alt="Daniel Wilson"
               />
+
               <div class="name-position">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="paragraph">UI Designer</p>
@@ -412,26 +428,41 @@
               <div class="overlay-img">
                 <picture>
                   <!-- Desktop -->
-                   <source media="(1440px)" srcset="
-                   ./images/Portfolio/Desktop/Banking.jpg 1x,
-                   ./images/Portfolio/Desktop/Banking@2x.jpg 2x" />
-                  
-                   <!-- Tablet -->
-                    <source media="(768px)" srcset="
-                    ./images/Portfolio/Tablet/Banking-tab.jpg 1x,
-                    ./images/Portfolio/Tablet/Banking-tab@2x.jpg 2x
-                    "/>
-                    <!-- Mobile -->
-                     <source media="(767px)" srcset="
-                     ./images/Portfolio/Mobile/Banking-mob.jpg 1x,
-                     ./images/Portfolio/Mobile/Banking-mob@2x.jpg 2x
-                     
-                     "/>
-                <img
-                  src="./images/Portfolio/Desktop/Banking.jpg"
-                  width="360"
-                  alt="Banking App"
-                />
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Banking.jpg    1x,
+                      ./images/Portfolio/Desktop/Banking@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Banking-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Banking-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Banking-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Banking-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Banking-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Banking App"
+                  />
+                </picture>
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -447,11 +478,43 @@
 
             <li class="portfolio-item">
               <div class="overlay-img">
-                <img
-                  src="./images/Portfolio/Desktop/Cashless.jpg"
-                  width="360"
-                  alt="Cashless Payment"
-                />
+                <picture>
+                  <!-- Desktop -->
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Cashless.jpg    1x,
+                      ./images/Portfolio/Desktop/Cashless@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Cashless-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Cashless-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Cashless-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Cashless-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Cashless-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Cashless Payment"
+                  />
+                </picture>
 
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
@@ -468,11 +531,43 @@
 
             <li class="portfolio-item">
               <div class="overlay-img">
-                <img
-                  src="./images/Portfolio/Desktop/Meditation.jpg"
-                  width="360"
-                  alt="Meditation App"
-                />
+                <picture>
+                  <!-- Desktop -->
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Meditation.jpg    1x,
+                      ./images/Portfolio/Desktop/Meditation@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Meditation-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Meditation-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Meditation-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Meditation-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Meditation-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Meditation App"
+                  />
+                </picture>
 
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
@@ -488,11 +583,43 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-img">
-                <img
-                  src="./images/Portfolio/Desktop/Taxi.jpg"
-                  width="360"
-                  alt="Taxi Service"
-                />
+                <picture>
+                  <!-- Desktop -->
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Taxi.jpg    1x,
+                      ./images/Portfolio/Desktop/Taxi@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Taxi-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Taxi-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Taxi-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Taxi-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Taxi-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Taxi Service"
+                  />
+                </picture>
 
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
@@ -508,11 +635,43 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-img">
-                <img
-                  src="./images/Portfolio/Desktop/Illustrations.jpg"
-                  width="360"
-                  alt="Screen Illustrations"
-                />
+                <picture>
+                  <!-- Desktop -->
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Illustrations.jpg    1x,
+                      ./images/Portfolio/Desktop/Illustrations@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Illustrations-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Illustrations-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Illustrations-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Illustrations-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Illustrations-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Screen Illustrations"
+                  />
+                </picture>
 
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
@@ -528,11 +687,43 @@
             </li>
             <li class="portfolio-item">
               <div class="overlay-img">
-                <img
-                  src="./images/Portfolio/Desktop/Courses.jpg"
-                  width="360"
-                  alt="Online Courses"
-                />
+                <picture>
+                  <!-- Desktop -->
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/Portfolio/Desktop/Courses.jpg    1x,
+                      ./images/Portfolio/Desktop/Courses@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Tablet -->
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Portfolio/Tablet/Courses-tab.jpg    1x,
+                      ./images/Portfolio/Tablet/Courses-tab@2x.jpg 2x
+                    "
+                  />
+
+                  <!-- Mobile -->
+
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      ./images/Portfolio/Mobile/Courses-mob.jpg    1x,
+                      ./images/Portfolio/Mobile/Courses-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Portfolio/Mobile/Courses-mob.jpg"
+                    width="360"
+                    height="300"
+                    alt="Online Courses"
+                  />
+                </picture>
 
                 <p class="overlay-text"
                   >14 Stylish and User-Friendly App Design Concepts · Task
@@ -628,10 +819,10 @@
       </div>
     </footer>
     <!-- modal-window -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button">
-          <svg class="modal-form-icon" width="8" height="8">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -640,7 +831,7 @@
           >Leave your contacts and we will call you back
         </p>
 
-        <form class="form" name="registration-form" autocomplete="off">
+        <form class="modal-form" name="review">
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-name">Name</label>
 
@@ -651,7 +842,7 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-form-input-icon" width="18" height="24">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -663,7 +854,7 @@
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
-                type="text"
+                type="tel"
                 name="user-phone"
                 id="user-phone"
               />
@@ -679,7 +870,7 @@
             <div class="modal-form-wrapper">
               <input
                 class="modal-form-input"
-                type="text"
+                type="email"
                 name="user-email"
                 id="user-email"
               />
@@ -689,17 +880,18 @@
             </div>
           </div>
 
-          <div class="modal-form-field modal-comment">
+          <div class="modal-form-textarea">
             <label class="modal-form-label" for="user-comment">Comment</label>
 
             <textarea
-              class="modal-form-input textarea"
+              class="modal-form-message"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-form-field checkbox">
+
+          <div class="modal-form-agremeent">
             <input
               class="visually-hidden modal-checked"
               type="checkbox"
@@ -708,20 +900,22 @@
               value="true"
               required
             />
-            <label class="agree" for="user-privacy"
-              ><span class="checkbox-styling">
+            <label class="modal-form-agremeent-text" for="user-privacy"
+              ><span class="modal-form-checkbox">
                 <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
               >I accept the terms and conditions of the
-              <a href="rules.html" class="agree-link" target="_blank"
+              <a href="#" class="modal-form-agremeent-link" target="_blank"
                 >Privacy Policy</a
               >
             </label>
           </div>
-          <button type="button" class="button-text modal-send-btn">Send</button>
+          <button type="button" class="button-text">Send</button>
         </form>
       </div>
     </div>
+    <script src="/js/modal.js"></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
