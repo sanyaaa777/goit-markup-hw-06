@@ -1133,7 +1133,7 @@ img {
   border: 1px solid #4d5ae5;
 }
 
-.modal-forn-icon {
+.modal-form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -1143,7 +1143,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus + .modal-forn-icon {
+.modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
 }
 
