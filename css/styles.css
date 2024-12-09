@@ -6,11 +6,11 @@ body {
   background-color: #fff;
   color: #434455;
 }
-.icon{
-  fill: #f4f4fd;
-}
 button {
   cursor: pointer;
+}
+.mob-icon{
+  fill: #f4f4fd;
 }
 
 /* #region reset  */
