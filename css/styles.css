@@ -6,6 +6,9 @@ body {
   background-color: #fff;
   color: #434455;
 }
+.icon{
+  fill: #f4f4fd;
+}
 button {
   cursor: pointer;
 }
@@ -282,11 +285,8 @@ img {
     position: absolute;
     left: 0;
     bottom: -1px;
-    /* Розташування лінії під текстом */
     width: 100%;
-    /* Ширина підкреслення відповідає ширині тексту */
     height: 4px;
-    /* Товщина лінії */
     border-radius: 2px;
     background-color: #404bbf;
   }
@@ -653,8 +653,6 @@ img {
     row-gap: 64px;
     column-gap: 24px;
   }
-  .team-section {
-  }
 }
 @media only screen and (min-width: 1158px) {
   .team-list {
@@ -833,8 +831,6 @@ img {
 
 .footer-studio {
   color: #f4f4fd;
-}
-.footer-logo-box {
 }
 @media only screen and (min-width: 1158px) {
   .footer-logo-box {
@@ -1146,7 +1142,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus + .modal-forn-icon {
+.modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
 }
 

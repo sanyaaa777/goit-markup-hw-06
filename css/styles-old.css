@@ -93,9 +93,9 @@ section {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px; /* Розташування лінії під текстом */
-  width: 100%; /* Ширина підкреслення відповідає ширині тексту */
-  height: 4px; /* Товщина лінії */
+  bottom: -1px; 
+  width: 100%; 
+  height: 4px; 
   border-radius: 2px;
   background-color: #404bbf;
 }
